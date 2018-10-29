@@ -1,0 +1,25 @@
+/*
+Theme Name: Expreso Los Chankas
+Theme URI: https://wilber-frontend.com/themes
+Author: Wilber Pariona Huaraca
+Author URI:https://wilber-frontend.com
+Description: Expreso Los Chankases una empresa originaria de  Andahuaylas, dedicada al transporte terrestre de pasajeros y servicios de carga en general. Cuenta con rutas a otras importantes ciudades, especialmente a Lima, Puerto Maldonado y Cusco.
+Version:0.1
+Text Domain: expresonloschankas 
+*/ 
+@import "./assets/scss/index";
+
+
+
+
+/* Start Temporary Styles*/
+.archivo{
+    background-color: rgb(196, 238, 12);
+    color: #000000;
+    padding: .5em;
+    position: fixed;
+    top: 30em;
+    right: 0;
+} 
+/*End Temporary Styles*/ 
+

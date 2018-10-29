@@ -1,0 +1,46 @@
+@import "../ed-grid/ed-grid";
+@import "./front-page";
+@import "./header";
+@import "./mixin";
+/*  Start Base Styles */
+//Base
+
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+:root {
+    --first-color: #004CA8;
+    --first-color-alt: #0E205F;
+    --second-dark: #15949B;
+    --second-color: #1FDCE7;
+    --second-color-alt: #1EB5BE;  
+    --third-color: #E5CE00;
+    --third-color-alt: #CBB705;   
+    --fourth-color: #ECECEC;      
+    --dark-color: #373737; 
+    --border-color: #DFE0E0;
+    --text-color: #636363;
+    --text-color-alt: #444444;
+    --body-bg: #f5f4f4; 
+
+}
+:root {
+    --header-height: 3.5rem;
+    --header-height-responsive: 3.5rem;
+    --header-height-text: 1.5rem;
+    --header-height-list: 2rem;
+    --max-width: 1344px;
+    --gutter: .3rem;
+} 
+body{ 
+    font-family: 'Montserrat', sans-serif !important;
+    // background-color:var(--body-bg);  
+}  
+
+
+
+

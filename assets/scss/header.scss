@@ -1,0 +1,77 @@
+$bp-menu:l; 
+$fourhundred: 400px; 
+.toggle-container{
+    position: absolute;
+    top: 0.5em;
+    right: 0.8em;
+    width: 40px;
+    height: 40px;
+    margin-left: 4em;
+    border-radius: 50%;
+    background-color: rgba(#000000, 0.3); 
+    @include showTo($bp-menu); 
+}
+.nav-toggle{ 
+    @include navToggle(15px,#ffffff);
+    top: .8em;
+    right: -.5em; 
+    @include showTo($bp-menu); 
+}
+
+.header{
+    @include full;
+    // background-color: transparent;
+    background-color:#0E205F;
+    position: fixed; 
+    width: 100%;
+    z-index: var(--z-fixed);
+    &-container{
+        @include edContainer;
+        height:var(--header-height-responsive); 
+        transition: height .5s cubic-bezier(0, 0.27, 0.13, 0.57);
+        @include from($bp-menu){ 
+            height:  calc(var(--header-height) + 1.5rem);
+           
+        }
+    }
+    .logo{
+        @include edItem(60,60,20); 
+        @include flexCenter;
+        color: #ffffff;
+        @include to($fourhundred){
+            font-size: 13px;
+        }
+    }
+    .nav{
+        @include edItem(40,40,80);
+        @include edNav(left,$bp-menu);
+        @include mainCenter();  
+        padding-right: 0; 
+        @include to(l){
+            margin-top: 3.5rem;
+            background-color:#E4E4E4;
+            width: 70%;
+        } 
+        .menu{
+            @include  edMenu($bp-menu,edNav);  
+            padding-right: 0; 
+            li a{
+                font-size: 12px;
+                color: #ffffff;  
+               
+            }
+            @include from(l){
+                text-align: center; 
+                li:hover a{
+                    background:rgba(0,0,0,.5);
+                } 
+            }
+            @include to(l){ 
+                li a{   
+                    color: #202020; 
+                }
+            }  
+        }
+
+    }
+}
